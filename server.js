@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const { v4: uuidv4 } = require('uuid');
 const server = require('http').Server(app);
+app.use(express.static('public')); //public folder (script file)
 
 app.set('view engine', 'ejs');
 
