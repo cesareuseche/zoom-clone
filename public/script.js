@@ -30,7 +30,7 @@ navigator.mediaDevices.getUserMedia({
     })
 })
 
-peer.on('open', id => {
+peer.on('open', id => { //Generating the room Id
     socket.emit('join-room', ROOM_ID, id);
 })
 
