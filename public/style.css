@@ -1,4 +1,28 @@
-#video-grid{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.main__left{
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+}
+
+.main__right{
+    flex: 0.2;
+}
+
+.main__videos{
+    align-items: center;
+    background-color: #000000;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
 }
+
