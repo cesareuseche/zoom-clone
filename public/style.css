@@ -95,6 +95,7 @@ video{
 .messages{
     color: white;
     list-style: none;
+    padding: 20px;
 }
 
 .main__message__container {

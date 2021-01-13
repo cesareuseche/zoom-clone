@@ -49,3 +49,16 @@ const addVideoStream = (video, stream) => {
     })
     videoGrid.append(video);
 }
+
+let text = $('input')
+
+$('html').keydown((e) => {
+    if (e.which == 13 && text.val().length !== 0) {
+        console.log(text)
+        socket.emit('message', text.val());
+        text.val('')
+    }
+})
+socket.on('createMessage', message => {
+    $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
+})
