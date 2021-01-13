@@ -16,6 +16,10 @@ video{
     padding: 8px;
 }
 
+h6{
+    border-bottom: solid 1px;
+}
+
 .main{
     height: 100vh;
     display: flex;
@@ -96,6 +100,13 @@ video{
     color: white;
     list-style: none;
     padding: 20px;
+}
+
+.message{
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 7px;
+    margin-top: 6px;
 }
 
 .main__message__container {
