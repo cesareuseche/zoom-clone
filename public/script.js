@@ -71,7 +71,7 @@ const scrollToBottom = () => {
     d.scrollTop(d.prop('scrollHeight'))
 }
 
-// Mute the video functionality
+// Mute the video audio functionality
 
 const muteUnmute = () => {
     const enabled = myVideoStream.getAudioTracks()[0].enabled;
@@ -98,6 +98,8 @@ const setUnmuteButton = () => {
     `
     document.querySelector('.main__mute_button').innerHTML = html;
 }
+
+// Stop and play the video functionality
 
 const playStop = () => {
     console.log('object')
