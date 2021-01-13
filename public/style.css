@@ -87,9 +87,9 @@ video{
     text-align: center;
 }
 
-.chat__window {
+.main__chat__window {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .messages{

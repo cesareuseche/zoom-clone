@@ -61,4 +61,12 @@ $('html').keydown((e) => {
 })
 socket.on('createMessage', message => {
     $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
+    scrollToBottom()
 })
+
+// Scroll to the bottom chat functionality
+
+const scrollToBottom = () => {
+    let d = $('.main__chat__window');
+    d.scrollTop(d.prop('scrollHeight'))
+}
